@@ -150,7 +150,7 @@ public class UserInterface {
             ItemStack itemStack = color.toItemStack();
             if (user.getChatColor().equals(color)) {
                 if (user.getChatFormatting() == null || !user.getChatFormatting().equals(ChatFormatting.RAINBOW)) {
-                    itemStack.addUnsafeEnchantment(Enchantment.LUCK, 1);
+                    itemStack.addUnsafeEnchantment(Enchantment.FORTUNE, 1);
                     ItemMeta meta = itemStack.getItemMeta();
                     if (meta != null) {
                         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -178,7 +178,7 @@ public class UserInterface {
 
             ItemStack itemStack = new ItemStack(Material.BOOKSHELF);
             if (user.getChatFormatting() != null && user.getChatFormatting().equals(chatFormatting)) {
-                itemStack.addUnsafeEnchantment(Enchantment.LUCK, 1);
+                itemStack.addUnsafeEnchantment(Enchantment.FORTUNE, 1);
                 ItemMeta meta = itemStack.getItemMeta();
                 if (meta != null) {
                     meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -226,7 +226,7 @@ public class UserInterface {
             ItemStack bookItem = new ItemStack(Objects.requireNonNull(book));
 
             if (user.getSubgroup() != null && user.getSubgroup().equals(subgroup)) {
-                bookItem.addUnsafeEnchantment(Enchantment.LUCK, 1);
+                bookItem.addUnsafeEnchantment(Enchantment.FORTUNE, 1);
                 ItemMeta meta = bookItem.getItemMeta();
                 if (meta != null) {
                     meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -394,7 +394,7 @@ public class UserInterface {
             ItemStack itemStack = new ItemStack(Objects.requireNonNull(book));
 
             if (user.getGroup().equals(group)) {
-                itemStack.addUnsafeEnchantment(Enchantment.LUCK, 1);
+                itemStack.addUnsafeEnchantment(Enchantment.FORTUNE,1);
                 ItemMeta meta = itemStack.getItemMeta();
                 if (meta != null) {
                     meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -554,7 +554,7 @@ public class UserInterface {
         for (Color color : Color.getValues()) {
             ItemStack itemStack = color.toItemStack();
             if (group.getChatColor().equals(color) && (group.getChatFormatting() == null || !group.getChatFormatting().equals(ChatFormatting.RAINBOW))) {
-                itemStack.addUnsafeEnchantment(Enchantment.LUCK, 1);
+                itemStack.addUnsafeEnchantment(Enchantment.FORTUNE,1);
                 ItemMeta meta = itemStack.getItemMeta();
                 if (meta != null) {
                     meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -573,7 +573,7 @@ public class UserInterface {
         for (ChatFormatting chatFormatting : ChatFormatting.getValues()) {
             ItemStack itemStack = new ItemStack(Material.BOOKSHELF);
             if (group.getChatFormatting() != null && group.getChatFormatting().equals(chatFormatting)) {
-                itemStack.addUnsafeEnchantment(Enchantment.LUCK, 1);
+                itemStack.addUnsafeEnchantment(Enchantment.FORTUNE,1);
                 ItemMeta meta = itemStack.getItemMeta();
                 if (meta != null) {
                     meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
